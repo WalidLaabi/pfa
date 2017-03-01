@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /*
   Generated class for the Fournisseur page.
 
@@ -17,6 +17,10 @@ export class FournisseurPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FournisseurPage');
+  }
+
+  Back(){
+     this.navCtrl.setRoot(HomePage);
   }
 
 }

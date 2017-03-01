@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
-import { AboutPage } from '../about/about';
+import { FournisseurPage } from '../fournisseur/fournisseur';
+import {  ProduitPage} from '../produit/produit';
+import { TableauPage } from '../tableau/tableau';
 
 @Component({
   selector: 'page-home',
@@ -15,18 +17,18 @@ export class HomePage {
   Openfournisseur()
   {
      
-     this.navCtrl.setRoot(AboutPage);
+     this.navCtrl.setRoot(FournisseurPage);
 
    }
 
   Openproduit()
   {
-
+     this.navCtrl.setRoot(ProduitPage);
   }
 
   Opentableau()
   {
-
+     this.navCtrl.setRoot(TableauPage);
   }
 
 }

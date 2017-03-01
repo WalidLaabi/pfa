@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /*
   Generated class for the Tableau page.
 
@@ -18,5 +18,7 @@ export class TableauPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TableauPage');
   }
-
+Back(){
+     this.navCtrl.setRoot(HomePage);
+  }
 }
